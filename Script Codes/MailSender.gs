@@ -4,9 +4,9 @@ function sendEmails() {
 
   for (var i = 1; i < data.length; i++) {
     try {
-      var emailAddress = data[i][1];
-      var name = data[i][2];
-      var driveLink = data[i][4]
+      var emailAddress = data[i][1]; //Email present in 2nd column
+      var name = data[i][2]; //Name present present in 3rd column
+      var driveLink = data[i][4] //driveLink present present in 3rd column
       var htmlContent = 
         `
           <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
